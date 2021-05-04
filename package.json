@@ -1,0 +1,30 @@
+{
+  "name": "baby-diary-server",
+  "version": "1.0.0",
+  "description": "api and server for baby diary app",
+  "main": "app.js",
+  "scripts": {
+    "test": "ava",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [
+    "express",
+    "ava",
+    "mongoose",
+    "api"
+  ],
+  "ava": {
+    "files": ["!tests/helpers", "!tests/temp", "!tests/testfiles"]
+  },
+  "author": "Dr",
+  "license": "ISC",
+  "dependencies": {
+    "ava": "^3.15.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.17",
+    "multer": "^1.4.2",
+    "nodemon": "^2.0.7",
+    "supertest": "^6.1.3"
+  }
+}
